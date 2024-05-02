@@ -6,8 +6,52 @@
     <title>Multimedia Platform</title>
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
+    <script src="design-app.js" defer></script>
 </head>
 <body>
+
+    <div class="background-surround" id="background-surround"></div>
+
+    <div class="modal-content" id="modal-section">
+        <div class="form-modal">
+            <h2>ADD NEW FILM</h2>
+            <div class="title-description">
+                <p class="tag">Title: </p>
+                <input type="text" id="title" placeholder="enter the film title">
+
+                <p>Autore: </p>
+                <input type="text" id="autore" placeholder="enter the autor">
+            </div>
+
+            <div class="description">
+                <p class="tags">Description: </p>
+                <textarea name="" id="description" cols="30" rows="10" placeholder="Enter a description"></textarea>
+            </div>
+            
+            <div class="otherinformation">
+                <p>Durata: </p>
+                <input type="text" id="durata" placeholder="enter the duration">
+                
+                <p>Tags:</p>
+                <input type="text" id="tags" placeholder="enter the tags">
+            </div>
+
+            <div class="url">
+                <p>Image url:</p>
+                <input type="text" id="image-url" placeholder="Enter the image url">
+
+                <p>Film url:</p>
+                <input type="text" id="film-url" placeholder="enter the film url">
+            </div>
+
+            <div class="button">
+                <button class="clear-btn" id="clear-btn">Clear Field</button>        
+                <button class="add-film-btn" id="add-film">Save Film</button>
+            </div>
+        </div>
+
+    </div>
+
     <nav class="nav-bar">
         <div class="nav-bar-logo">
             <a href="index.html">
@@ -43,6 +87,8 @@
         <button class="search-btn">
             <img src="immagini/searchbar/lente.png" alt="">
         </button>
+
+        <button id="add-btn" class="add-btn">Add Film</button>
     </section>
 
     <section class="dynamic-section-Main" id="Section-Main">    
