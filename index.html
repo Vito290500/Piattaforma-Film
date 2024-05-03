@@ -9,9 +9,7 @@
     <script src="design-app.js" defer></script>
 </head>
 <body>
-
     <div class="background-surround" id="background-surround"></div>
-
     <div class="modal-content" id="modal-section">
         <div class="form-modal">
             <h2>ADD NEW FILM</h2>
@@ -52,6 +50,11 @@
 
     </div>
 
+    <div class="modal-error" id="modal-error">
+        <h2>FILM NOT FOUND</h2>
+        <p>Apologies, the requested film could not be found. Please ensure that the title is spelled correctly and try again. If you need assistance, feel free to contact our support team for further assistance.</p>
+    </div>
+
     <nav class="nav-bar">
         <div class="nav-bar-logo">
             <a href="index.html">
@@ -83,8 +86,13 @@
 
     <section class="Search-bar">
         <button class="filtri">Filtri</button>
-        <input type="text" class="search-input-bar">
-        <button class="search-btn">
+        <input type="text" class="search-input-bar" id="searchBar" placeholder="Enter the Film title">
+       
+        <button class="clearInputSearch-btn" id="ClearInputSearchBtn">
+            <img src="immagini/searchbar/x.png" alt="" width="15px" height="px">
+        </button>
+
+        <button class="search-btn" id="searchBtn">
             <img src="immagini/searchbar/lente.png" alt="">
         </button>
 
@@ -97,7 +105,11 @@
         </ul>
     </section>
 
-
+    <section class="result-section" id="resultSection">
+        <ul>
+            <!--Dynamic Generated With Js-->
+        </ul>
+    </section>
 
 </body>
 </html>
